@@ -10,14 +10,14 @@ angular.module('myApp', [])
 }]); 
 
 
-function openAbout() {
-    console.log('stuff')
-    $('#about').animate({ opacity: 1 }, 300);
-}
+// function openAbout() {
+//     console.log('stuff')
+//     $('#about').animate({ opacity: 1 }, 300);
+// }
 
-function main() {
-    console.log("IT RAN")
-    $('.form').on('click', openAbout); 
-}
+// function main() {
+//     console.log("IT RAN")
+//     $('.form').on('click', openAbout); 
+// }
 
-$(main); 
+// $(main); 
