@@ -1,6 +1,6 @@
 body {
     padding: 100px; 
-    background-color: rgb(51, 58, 52); 
+    background-color: rgb(22, 22, 22); 
 }
 
 p {
@@ -16,6 +16,14 @@ h2 {
     margin: 0px 0px 40px 0px; 
 }
 
+h1 {
+    color: white; 
+    font-size: 80px;  
+    font-family: 'Gamja Flower', cursive;
+    position: relative; 
+    top: -70px;  
+}
+
 input {
     padding: 10px 13px; 
     border: 0px; 
@@ -24,8 +32,22 @@ input {
     margin: 0px 10px 20px 0px; 
 }
 
+.logo {
+    width: 150px; 
+    position: relative; 
+    top: 50px; 
+    display: inline; 
+}
+
 .form {
-    background-color: rgb(74, 82, 75); 
+    background-color: rgb(74, 76, 82); 
+    padding: 50px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.form-inner {
+    background-color: rgb(55, 57, 63); 
     padding: 50px; 
     border-radius: 5px; 
     text-align: center; 
@@ -33,12 +55,106 @@ input {
 
 .display {
     margin-top: 30px; 
-    background-color: rgb(107, 119, 108); 
-    padding: 50px; 
+    background-color: rgb(119, 123, 131); 
+    padding: 100px; 
     border-radius: 5px;   
 }
 
 .display p {
     font-family: 'Gamja Flower', cursive;
     font-size: 24px; 
+}
+
+#about { 
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    z-index: 20;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#about-link-container {
+    text-align: right; 
+    padding-right: 30px; 
+}
+
+.about-main {
+    width: 70%; 
+    max-width: 300px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background-color: rgb(211, 211, 211); 
+    padding: 50px; 
+    z-index: 21;
+    color: rgb(68, 68, 68);
+    transition: 1s;
+    box-shadow: 0px 0px 40px rgb(29, 29, 29); 
+    border-radius: 3px;
+    transition: 0.3s;   
+}
+
+.about-p {
+    line-height: 22px;
+    text-align: center; 
+    color: rgb(36, 36, 36);  
+}
+
+.about-title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px; 
+    color: rgb(36, 36, 36); 
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+
+.about-close {
+    float: right; 
+    opacity: 0.6; 
+    font-size: 20px; 
+    position: relative; 
+    top: -18px; 
+    right: -10px; 
+    transition: 0.3s; 
+    cursor: pointer;
+}
+
+.about-close:hover {
+    opacity: 0.8; 
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 50px; 
+    } 
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px; 
+    } 
+    .logo {
+        width: 80px; 
+        position: relative; 
+        top: 30px; 
+        display: inline; 
+    }
+    h1 {
+        color: white; 
+        font-size: 50px;  
+        top: -70px;  
+    }
 }
