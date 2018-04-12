@@ -181,3 +181,30 @@ input {
         top: -50px;  
     }
 }
+
+@media screen and (max-width: 500px) {
+    .form {
+        padding-top: 100px; 
+    }
+    .form-inner {
+        background-color: rgb(74, 76, 82); 
+        padding: 0px;   
+    }
+    #about-link-container {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .logo {
+        width: 50px; 
+        position: relative; 
+        top: 18px; 
+        display: inline; 
+    }
+    h1 {
+        color: white; 
+        font-size: 20px;  
+        top: -50px;  
+    }
+}
