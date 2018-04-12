@@ -151,11 +151,11 @@ input {
 @media screen and (max-width: 1000px) {
     h1 {
         font-size: 50px;  
-        top: -70px;  
+        top: -50px;  
     }
     .logo {
         width: 100px; 
-        top: 30px; 
+        top: 35px; 
     }
 }
 
@@ -167,10 +167,13 @@ input {
     h2 {
         font-size: 20px; 
     }
+    #about-link-container {
+        display: none; 
+    }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
     body {
         padding: 10px; 
     } 
@@ -190,13 +193,10 @@ input {
 @media screen and (max-width: 500px) {
     .form {
         padding-top: 100px; 
+        background-color: rgb(55, 57, 63); 
     }
     .form-inner {
-        background-color: rgb(74, 76, 82); 
         padding: 0px;   
-    }
-    #about-link-container {
-        display: none; 
     }
 }
 
@@ -211,5 +211,8 @@ input {
         color: white; 
         font-size: 20px;  
         top: -50px;  
+    }
+    input {
+        width: calc(100% - 26px); 
     }
 }
