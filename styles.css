@@ -83,6 +83,7 @@ input {
 #about-link-container {
     text-align: right; 
     padding-right: 30px; 
+    cursor: hand; 
 }
 
 .about-main {
