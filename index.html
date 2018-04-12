@@ -11,7 +11,7 @@
         <title>Madlibs - AngularJS</title>
     </head>
     <body ng-app="myApp">
-        <div ng-controller='myController'>
+        <div ng-controller='myController as ctrl'>
             <div class="form">
                 <div class="form-inner">
                     <div id="about-link-container" ng-click="aboutOn=true">
@@ -19,20 +19,21 @@
                     </div>
                     <h1>M<img src="angular-logo.png" class="logo" />DLIBS</h1>
                     <h2>Provide the following words:</h2>         
-                    <input ng-model="female_name" />
-                    <input ng-model="position" />
-                    <input ng-model="tedious_task" />
-                    <input ng-model="dirty_task" />
-                    <input ng-model="celebrity" />
-                    <input ng-model="useless_skill" />
+                    <input ng-model="ctrl.female_name" placeholder="female name" />
+                    <input ng-model="ctrl.position" placeholder="position" />
+                    <input ng-model="ctrl.tedious_task" placeholder="tedious task" />
+                    <input ng-model="ctrl.dirty_task" placeholder="dirty task" />
+                    <input ng-model="ctrl.celebrity" placeholder="celebrity" />
+                    <input ng-model="ctrl.useless_skill" placeholder="useless skill" />
                 </div>
             </div>
             <div class="display">
-                <p>{{ female_name }} was a {{ position }}. Although she loved parts of her job, 
-                    she absolutely hated {{tedious_task}} and {{dirty_task}}. So, {{female_name}} met 
-                    with her life mentor {{celebrity}} who told her to learn how 
-                    to {{useless_skill}} at school. Her school didn't offer a 
-                    course on {{useless_skill}} so she studied programming instead. 
+                <p>{{ ctrl.female_name ? ctrl.female_name : '_____' }} was a {{ ctrl.position ? ctrl.position : '_____' }}. 
+                    Although she loved parts of her job, she absolutely hated {{ ctrl.tedious_task ? ctrl.tedious_task  : '_____'}} 
+                    and {{ ctrl.dirty_task ? ctrl.dirty_task : '_____' }}. So, {{ ctrl.female_name ? ctrl.female_name : '_____'}} met 
+                    with her life mentor {{ctrl.celebrity ? ctrl.celebrity : '_____'}} who told her to learn how 
+                    to {{ ctrl.useless_skill ? ctrl.useless_skill: '_____'  }} at school. Her school didn't offer a 
+                    course on {{ ctrl.useless_skill ? ctrl.useless_skill: '_____'  }} so she studied programming instead. 
                 </p> 
             </div>
             <div ng-if="aboutOn" ng-click="aboutOn=false" class="about">
