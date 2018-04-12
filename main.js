@@ -7,6 +7,7 @@ angular.module('myApp', [])
     $scope.female_name = "female name"; 
     $scope.celebrity = "celebrity"; 
     $scope.useless_skill = "useless skill"; 
+    $scope.aboutOn = false; 
 }]); 
 
 
